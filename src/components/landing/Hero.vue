@@ -11,3 +11,9 @@ Ejemplo:
 “Diseño moderno, rápido y optimizado para ventas”
 
 [Solicitar cotización]-->
+<script setup>
+</script>
+
+<template>
+    
+</template>

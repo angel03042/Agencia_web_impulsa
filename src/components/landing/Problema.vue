@@ -5,3 +5,9 @@ Ejemplo:
 ¿Tu negocio no aparece en internet?
 ¿Tu página no genera ventas?
 ¿Se ve mal en celular?-->
+<script setup>
+</script>
+
+<template>
+    
+</template>

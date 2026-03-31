@@ -5,3 +5,9 @@ Antes / después (si puedes)
 Proyectos reales (aunque sean ficticios al inicio)
 
 Esto genera confianza-->
+<script setup>
+</script>
+
+<template>
+    
+</template>

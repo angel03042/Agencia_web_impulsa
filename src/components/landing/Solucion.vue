@@ -8,3 +8,9 @@ Páginas rápidas
 Importante: habla en beneficios, no en tecnología
 
 “Tu web será rápida, atractiva y lista para vender”-->
+<script setup>
+</script>
+
+<template>
+    
+</template>

@@ -13,7 +13,7 @@ Botón: WhatsApp / formulario-->
         
         <div>
           <span class="text-[10px] font-bold uppercase tracking-[0.4em] text-emerald-400/60">Próximo paso</span>
-          <h2 class="mt-6 font-serif text-6xl leading-[0.9] tracking-tighter sm:text-8xl">
+          <h2 class="mt-6 font-serif text-6xl leading-[0.9] tracking-tighter sm:text-7xl">
             Hablemos <br> de tu <br> <span class="italic text-emerald-400">proyecto</span>.
           </h2>
           <p class="mt-10 max-w-sm text-lg leading-relaxed text-gray-400">
@@ -51,15 +51,6 @@ Botón: WhatsApp / formulario-->
 
         </div>
 
-      </div>
-
-      <div class="mt-32 flex flex-col justify-between border-t border-[#FDFCF8]/10 pt-12 text-sm text-gray-500 md:flex-row">
-        <p>© 2026 WebImpulsa. Diseño consciente para negocios ambiciosos.</p>
-        <div class="mt-6 flex gap-8 md:mt-0">
-          <a href="#" class="hover:text-[#FDFCF8]">Instagram</a>
-          <a href="#" class="hover:text-[#FDFCF8]">LinkedIn</a>
-          <a href="#" class="hover:text-[#FDFCF8]">Email</a>
-        </div>
       </div>
 
     </div>

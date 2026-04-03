@@ -6,7 +6,7 @@ Aumenta conversiones-->
 </script>
 
 <template>
-  <section class="bg-[#FDFCF8] px-6 py-24 md:px-12 lg:px-24">
+  <section class="bg-[#FDFCF8] px-6 py-18 md:px-12 lg:px-24">
     <div class="mx-auto max-w-4xl">
       
       <div class="mb-16 text-center">
@@ -24,7 +24,7 @@ Aumenta conversiones-->
             <span class="text-2xl transition-transform group-open:rotate-45">+</span>
           </summary>
           <div class="mt-6 max-w-2xl text-lg leading-relaxed text-gray-600">
-            Depende de la complejidad, pero una Landing Page suele estar lista en 7-10 días, mientras que una web corporativa completa toma entre 3 y 4 semanas. Priorizamos la calidad sobre las prisas.
+            Una landing page suele estar lista en 2 a 5 días. Si es una página más completa, puede tomar de 1 a 2 semanas.
           </div>
         </details>
 
@@ -34,7 +34,7 @@ Aumenta conversiones-->
             <span class="text-2xl transition-transform group-open:rotate-45">+</span>
           </summary>
           <div class="mt-6 max-w-2xl text-lg leading-relaxed text-gray-600">
-            Totalmente. Una vez finalizado el proyecto y realizado el pago, tú eres el dueño absoluto del código, el diseño y el dominio. No aplicamos "secuestros" técnicos.
+            Sí, la página es completamente tuya. Una vez terminada, tendrás acceso total y podrás usarla como quieras.
           </div>
         </details>
 
@@ -44,7 +44,7 @@ Aumenta conversiones-->
             <span class="text-2xl transition-transform group-open:rotate-45">+</span>
           </summary>
           <div class="mt-6 max-w-2xl text-lg leading-relaxed text-gray-600">
-            Si los tienes, genial. Si no, ofrecemos servicios de copywriting estratégico y selección de fotografía profesional para que no tengas que preocuparte por nada más que por tu negocio.
+            Si ya tienes textos e imágenes, perfecto. Si no, te ayudamos a crearlos para que no tengas que preocuparte por eso.
           </div>
         </details>
 
@@ -54,7 +54,32 @@ Aumenta conversiones-->
             <span class="text-2xl transition-transform group-open:rotate-45">+</span>
           </summary>
           <div class="mt-6 max-w-2xl text-lg leading-relaxed text-gray-600">
-            No solo diseñamos "bonito". Aplicamos principios de psicología de ventas, optimizamos la velocidad de carga y creamos llamados a la acción (CTAs) estratégicos que guían al usuario hacia la compra.
+            Diseñamos la página para que sea clara, rápida y fácil de usar, guiando al visitante a contactarte o comprar.
+          </div>
+        </details>
+
+        <details class="group border-b border-black/10 py-6">
+          <summary class="flex cursor-pointer items-center justify-between list-none">
+            <h3 class="text-xl font-bold tracking-tight md:text-2xl">
+            ¿Cómo es el pago?
+            </h3>
+            <span class="text-2xl transition-transform group-open:rotate-45">+</span>
+          </summary>
+          <div class="mt-6 max-w-2xl text-lg leading-relaxed text-gray-600">
+            Se trabaja con un anticipo para iniciar y el resto al finalizar el proyecto. 
+            También podemos adaptarnos según el tipo de página.
+          </div>
+        </details>
+
+        <details class="group border-b border-black/10 py-6">
+          <summary class="flex cursor-pointer items-center justify-between list-none">
+            <h3 class="text-xl font-bold tracking-tight md:text-2xl">
+            ¿Puedo pedir cambios?
+            </h3>
+            <span class="text-2xl transition-transform group-open:rotate-45">+</span>
+          </summary>
+          <div class="mt-6 max-w-2xl text-lg leading-relaxed text-gray-600">
+            Sí, durante el proceso puedes pedir ajustes para asegurarnos de que la página quede como la necesitas.
           </div>
         </details>
 

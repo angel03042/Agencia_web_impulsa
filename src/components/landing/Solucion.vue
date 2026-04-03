@@ -12,19 +12,19 @@ Importante: habla en beneficios, no en tecnología
 </script>
 
 <template>
-  <section id="solucion" class="bg-[#FDFCF8] px-6 py-24 md:px-12 lg:px-24">
+  <section id="solucion" class="bg-[#FDFCF8] px-6 py-18 md:px-12 lg:px-24">
     <div class="mx-auto max-w-7xl">
       
       <div class="flex flex-col items-end justify-between gap-8 border-b border-black/10 pb-12 lg:flex-row">
-        <div class="max-w-2xl">
+        <div class="max-w-4xl">
           <span class="text-[10px] font-bold uppercase tracking-[0.3em] text-emerald-900/60">Nuestra Solución</span>
           <h2 class="mt-4 font-serif text-5xl leading-[1.1] tracking-tighter md:text-6xl">
-            No hacemos simples webs. <br>
-            Construimos <span class="italic text-emerald-900">ventajas competitivas</span>.
+            Nosotros creamos tu página web <br>
+            <span class="italic text-emerald-900">lista para empezar</span>.
           </h2>
         </div>
         <p class="max-w-xs text-sm font-medium leading-relaxed text-gray-500 italic">
-          “La estética atrae, pero la estrategia es lo que realmente cierra la venta.”
+          “Sin complicaciones, sin conocimientos técnicos, sin perder tiempo.”
         </p>
       </div>
 
@@ -37,9 +37,9 @@ Importante: habla en beneficios, no en tecnología
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
             </svg>
           </div>
-          <h3 class="text-3xl font-bold tracking-tight">Prestigio Visual</h3>
+          <h3 class="text-3xl font-bold tracking-tight">Te ves profesional desde el inicio</h3>
           <p class="mt-4 text-lg leading-relaxed opacity-70">
-            Tu marca merece un diseño que proyecte autoridad. Creamos interfaces que no solo se ven bien, sino que obligan al visitante a tomarte en serio desde el primer segundo.
+            Diseñamos tu página para que transmita confianza y seriedad, aunque estés empezando. Tus clientes sabrán que pueden confiar en ti desde el primer vistazo.
           </p>
         </div>
 
@@ -50,9 +50,9 @@ Importante: habla en beneficios, no en tecnología
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
             </svg>
           </div>
-          <h3 class="text-3xl font-bold tracking-tight">Ventas en Piloto Automático</h3>
+          <h3 class="text-3xl font-bold tracking-tight">Tus clientes pueden encontrarte</h3>
           <p class="mt-4 text-lg leading-relaxed opacity-70">
-            Transformamos tu catálogo en una máquina de facturar. Tiendas en línea intuitivas, seguras y optimizadas para que el proceso de compra sea un placer, no un esfuerzo.
+            Creamos tu web para que aparezcas cuando alguien busque lo que ofreces. Dejas de depender solo de recomendaciones y empiezas a recibir nuevos contactos.
           </p>
         </div>
 
@@ -63,9 +63,9 @@ Importante: habla en beneficios, no en tecnología
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
             </svg>
           </div>
-          <h3 class="text-3xl font-bold tracking-tight">Imán de Clientes</h3>
+          <h3 class="text-3xl font-bold tracking-tight">Disponible 24/7 para tu negocio</h3>
           <p class="mt-4 text-lg leading-relaxed opacity-70">
-            Aparecer en Google no es suerte, es ingeniería. Estructuramos tu contenido para que los clientes que ya te están buscando te encuentren antes que a nadie más.
+            Tu página trabaja por ti todo el tiempo. Muestra tus servicios, responde dudas y permite que te contacten incluso cuando tú no estás disponible.
           </p>
         </div>
 
@@ -76,9 +76,9 @@ Importante: habla en beneficios, no en tecnología
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
             </svg>
           </div>
-          <h3 class="text-3xl font-bold tracking-tight">Velocidad que Convierte</h3>
+          <h3 class="text-3xl font-bold tracking-tight">Nos encargamos de todo</h3>
           <p class="mt-4 text-lg leading-relaxed opacity-70">
-            Cada segundo de carga cuenta dinero. Optimizamos tu sitio para que vuele, reduciendo la tasa de rebote y manteniendo a tus usuarios felices y comprometidos.
+            No necesitas saber de diseño ni tecnología. Nosotros creamos tu página completa para que tú solo te enfoques en tu negocio.
           </p>
         </div>
 

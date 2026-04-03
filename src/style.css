@@ -1,1 +1,22 @@
 @import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+.nav-link {
+  @apply relative text-sm font-medium tracking-wide text-black/80 transition-all duration-300;
+}
+
+.nav-link::after {
+  content: "";
+  @apply absolute left-0 -bottom-1 h-[1px] w-0 bg-emerald-900 transition-all duration-300;
+}
+
+.nav-link:hover {
+  @apply text-black;
+}
+
+.nav-link:hover::after {
+  @apply w-full;
+}

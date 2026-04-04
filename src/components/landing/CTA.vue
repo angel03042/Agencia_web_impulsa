@@ -1,4 +1,5 @@
 <script setup>
+import { WHATSAPP_LINK } from '../../config/contact'
 </script>
 
 <template>
@@ -19,7 +20,7 @@
 
         <div class="flex flex-col gap-6">
           
-          <a href="https://wa.me/9331244508" target="_blank" 
+          <a :href="WHATSAPP_LINK + '?text=Hola,%20me%20gustaría%20obtener%20más%20información%20sobre%20los%20servicios%20que%20ofrecen.%20¿Podrían%20apoyarme%20con%20detalles?'" target="_blank" 
              class="group flex items-center justify-between border border-[#FDFCF8]/20 bg-[#FDFCF8]/5 p-8 transition-all hover:border-emerald-400">
             <div>
               <p class="text-[10px] font-bold uppercase tracking-widest opacity-60">Respuesta inmediata</p>

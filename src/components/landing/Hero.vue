@@ -31,7 +31,7 @@
             <img 
               src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=600&auto=format&fit=crop" 
               alt="Workplace" 
-              class="h-full w-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+              class="h-full w-full object-cover xl:grayscale hover:grayscale-0 transition-all duration-700"
             />
           </div>
 

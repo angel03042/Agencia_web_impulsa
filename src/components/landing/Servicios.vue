@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 import { catagolo, paquetes } from '../../data/servicios'
+import { WHATSAPP_LINK } from '../../config/contact'
 
 const open = ref(false)
 const selected = ref(null)
@@ -32,7 +33,7 @@ const closeModal = () => {
           </li>
         </ul>
 
-        <a :href="`https://wa.me/9331244508?text=Hola,%20quiero%20cotizar%20${selected.title}`" target="_blank" class="mt-6 block text-center bg-black text-white py-3 rounded-lg">
+        <a :href="`${WHATSAPP_LINK}?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20el%20servicio%20${selected.title}.%20¿Podrían%20brindarme%20detalles%20y%20una%20cotización?`" target="_blank" class="mt-6 block text-center bg-black text-white py-3 rounded-lg">
           Cotizar por WhatsApp
         </a>
       </div>

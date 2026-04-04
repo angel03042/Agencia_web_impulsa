@@ -4,7 +4,7 @@ import Hero from "../components/landing/Hero.vue";
 import Problema from "../components/landing/Problema.vue";
 import Solucion from "../components/landing/Solucion.vue";
 import Servicios from "../components/landing/Servicios.vue";
-import Testimonios from "../components/landing/Testimonios.vue";
+import Testimonios from "../components/landing/Proyectos.vue";
 import FAQ from "../components/landing/FAQ.vue";
 import CTA from "../components/landing/CTA.vue";
 

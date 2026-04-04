@@ -1,5 +1,5 @@
 <script setup>
-import { proyectos, comentarios } from '../../data/testimonios'
+import { proyectos, comentarios } from '../../data/proyectos'
 </script>
 
 <template>
@@ -20,7 +20,7 @@ import { proyectos, comentarios } from '../../data/testimonios'
             <img 
               :src="webs.imagen" 
               :alt="webs.alt" 
-              class="h-full w-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105"
+              class="h-full w-full object-cover xl:grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105"
             />
             <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 text-[10px] font-bold uppercase tracking-widest border border-black/10">
               Visitir sitio

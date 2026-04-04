@@ -1,4 +1,5 @@
 <script setup>
+import { onMounted } from 'vue'
 import Hero from "../components/landing/Hero.vue";
 import Problema from "../components/landing/Problema.vue";
 import Solucion from "../components/landing/Solucion.vue";
@@ -9,6 +10,16 @@ import CTA from "../components/landing/CTA.vue";
 
 import Navbar from "../components/layout/Navbar.vue";
 import Footer from "../components/layout/Footer.vue";
+
+import AOS from 'aos';
+import 'aos/dist/aos.css'
+
+onMounted(() => {
+  AOS.init({
+    duration: 800,
+    once: false
+  })
+})
 </script>
 
 <template>

@@ -20,13 +20,13 @@ Ejemplo:
       <div class="grid grid-cols-1 items-end gap-16 lg:grid-cols-12">
         
         <div class="lg:col-span-7">
-          <h1 class="font-serif text-6xl leading-[0.9] tracking-tighter sm:text-7xl xl:text-8xl">
+          <h1 class="font-serif text-6xl leading-[0.9] tracking-tighter sm:text-7xl xl:text-8xl" data-aos="zoom-in-right">
             Creamos <br />
             <span class="italic text-emerald-900">páginas</span> <br />
             que venden.
           </h1>
           
-          <div class="mt-12 max-w-md space-y-6">
+          <div class="mt-12 max-w-md space-y-6" data-aos="fade-up" data-aos-duration="2000">
             <p class="text-lg leading-relaxed text-gray-700">
               Creamos páginas web para negocios y profesionales que aún no tienen presencia digital. Haz que tus clientes te encuentren, confíen en ti y te contacten fácilmente.
             </p>
@@ -40,7 +40,7 @@ Ejemplo:
         </div>
 
         <div class="relative lg:col-span-5">
-          <div class="aspect-[7/8] overflow-hidden rounded-t-full border border-black/10 shadow-2xl">
+          <div class="aspect-[7/8] overflow-hidden rounded-t-full border border-black/10 shadow-2xl" data-aos="flip-up">
             <img 
               src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=600&auto=format&fit=crop" 
               alt="Workplace" 
@@ -48,7 +48,7 @@ Ejemplo:
             />
           </div>
 
-          <div class="absolute -bottom-6 -left-12 hidden md:block bg-emerald-900 p-8 text-white shadow-2xl rotate-[-3deg]">
+          <div class="animation absolute -bottom-6 -left-12 hidden md:block bg-emerald-900 p-8 text-white shadow-2xl rotate-[-3deg]">
             <p class="text-xs uppercase tracking-[0.2em] opacity-80">Más clientes</p>
             <p class="font-serif text-4xl">24/7</p>
             <p class="text-sm italic">en línea para ti</p>
@@ -66,5 +66,23 @@ Ejemplo:
 
 .font-serif {
   font-family: 'Playfair Display', serif;
+}
+
+.animation {
+  animation: cartel 2s ease-in-out;
+}
+
+@keyframes cartel {
+  0%{
+    opacity: 0;
+    scale: .5;
+  }
+  40%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+    scale: 1;
+  }
 }
 </style>

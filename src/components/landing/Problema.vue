@@ -14,12 +14,12 @@ Ejemplo:
       
       <div class="mb-12 max-w-3xl">
         <span class="text-[10px] font-bold uppercase tracking-[0.3em] text-emerald-900/60">Diagnóstico actual</span>
-        <h2 class="mt-4 font-serif text-5xl leading-tight tracking-tighter md:text-6xl">
+        <h2 class="mt-4 font-serif text-5xl leading-tight tracking-tighter md:text-6xl" data-aos="fade-right">
           No tener presencia en internet te está costando <span class="italic font-normal">clientes</span>.
         </h2>
       </div>
 
-      <div class="grid grid-cols-1 gap-12 border-t border-black/10 pt-16 lg:grid-cols-3">
+      <div class="grid grid-cols-1 gap-12 border-t border-black/10 pt-16 lg:grid-cols-3" data-aos="fade-down">
         
         <div class="group space-y-6">
           <div class="flex items-baseline gap-4">
@@ -56,7 +56,7 @@ Ejemplo:
 
       </div>
 
-      <div class="mt-18 flex flex-col items-center justify-between gap-8 border border-black/10 p-12 md:flex-row">
+      <div class="mt-18 flex flex-col items-center justify-between gap-8 border border-black/10 p-12 md:flex-row" data-aos="fade-up">
         <p class="max-w-xl text-xl font-medium leading-relaxed">
           Si te identificas con esto, no necesitas algo complicado… necesitas empezar a <span class="underline decoration-emerald-900/30 underline-offset-8">tener presencia en internet</span>.
         </p>

@@ -80,7 +80,7 @@ const closeModal = () => {
       
       <div class="mb-16">
         <span class="text-[10px] font-bold uppercase tracking-[0.3em] text-emerald-900/60">Catálogo de Servicios</span>
-        <h2 class="mt-4 font-serif text-5xl leading-tight tracking-tighter md:text-6xl">
+        <h2 class="mt-4 font-serif text-5xl leading-tight tracking-tighter md:text-6xl" data-aos="fade-right">
           Páginas web según lo que <br>
           <span class="italic text-emerald-900">tu negocio necesita</span>.
         </h2>
@@ -88,7 +88,7 @@ const closeModal = () => {
 
       <div class="border-t border-black/10">
         
-        <div class="group flex flex-col justify-between border-b border-black/10 py-10 transition-all hover:bg-emerald-50/50 md:flex-row md:items-center md:px-6">
+        <div class="group flex flex-col justify-between border-b border-black/10 py-10 transition-all hover:bg-emerald-50/50 md:flex-row md:items-center md:px-6" data-aos="flip-left">
           <div class="flex-1">
             <h3 class="font-serif text-3xl transition-all group-hover:translate-x-2 md:text-4xl">Landing Pages</h3>
             <p class="mt-2 max-w-md text-sm text-gray-500 uppercase tracking-widest font-bold">
@@ -107,7 +107,7 @@ const closeModal = () => {
           </div>
         </div>
 
-        <div class="group flex flex-col justify-between border-b border-black/10 py-10 transition-all hover:bg-emerald-50/50 md:flex-row md:items-center md:px-6">
+        <div class="group flex flex-col justify-between border-b border-black/10 py-10 transition-all hover:bg-emerald-50/50 md:flex-row md:items-center md:px-6" data-aos="flip-left">
           <div class="flex-1">
             <h3 class="font-serif text-3xl transition-all group-hover:translate-x-2 md:text-4xl">Página para tu negocio</h3>
             <p class="mt-2 max-w-md text-sm text-gray-500 uppercase tracking-widest font-bold">
@@ -126,7 +126,7 @@ const closeModal = () => {
           </div>
         </div>
 
-        <div class="group flex flex-col justify-between border-b border-black/10 py-10 transition-all hover:bg-emerald-50/50 md:flex-row md:items-center md:px-6">
+        <div class="group flex flex-col justify-between border-b border-black/10 py-10 transition-all hover:bg-emerald-50/50 md:flex-row md:items-center md:px-6" data-aos="flip-left">
           <div class="flex-1">
             <h3 class="font-serif text-3xl transition-all group-hover:translate-x-2 md:text-4xl">E-commerce</h3>
             <p class="mt-2 max-w-md text-sm text-gray-500 uppercase tracking-widest font-bold">
@@ -145,7 +145,7 @@ const closeModal = () => {
           </div>
         </div>
 
-        <div class="group flex flex-col justify-between border-b border-black/10 py-10 transition-all hover:bg-emerald-50/50 md:flex-row md:items-center md:px-6">
+        <div class="group flex flex-col justify-between border-b border-black/10 py-10 transition-all hover:bg-emerald-50/50 md:flex-row md:items-center md:px-6" data-aos="flip-left">
           <div class="flex-1">
             <h3 class="font-serif text-3xl transition-all group-hover:translate-x-2 md:text-4xl">Mantenimiento web</h3>
             <p class="mt-2 max-w-md text-sm text-gray-500 uppercase tracking-widest font-bold">

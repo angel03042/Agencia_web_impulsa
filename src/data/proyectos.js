@@ -1,9 +1,12 @@
+import biblioteca from '@/assets/biblioteca_udea.webp'
+import resena from '@/assets/resena_historica.webp'
+
 export const proyectos = {
     educativo: {
         nombre: 'Sitio web educativo',
         etiqueta: 'informacion institucional',
         descripcion: 'Diseño claro y fácil de entender, pensado para que los visitantes encuentren la información sin esfuerzo.',
-        imagen: '/src/assets/biblioteca_udea.webp',
+        imagen: biblioteca,
         alt: 'Proyecto educativo',
         url: 'https://bibliotecaudea.netlify.app/'
     },
@@ -11,7 +14,7 @@ export const proyectos = {
         nombre: 'Pagina informativa escolar',
         etiqueta: 'Contenido y navegacion clara',
         descripcion: 'Estructura simple que genera confianza y facilita que los visitantes tomen acción.',
-        imagen: '/src/assets/reseña_historica.webp',
+        imagen: resena,
         alt: 'Proyecto informativo',
         url: 'https://resena-historica.netlify.app/'
     }

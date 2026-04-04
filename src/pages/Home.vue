@@ -12,7 +12,7 @@ import Navbar from "../components/layout/Navbar.vue";
 import Footer from "../components/layout/Footer.vue";
 
 import AOS from 'aos';
-import 'aos/dist/aos.css'
+import 'aos/dist/aos.css';
 
 onMounted(() => {
   AOS.init({

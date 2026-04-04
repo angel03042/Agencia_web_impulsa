@@ -1,49 +1,12 @@
-<!--Divide lo que ofreces:
-
-Landing pages
-Páginas corporativas
-E-commerce
-Mantenimiento web-->
 <script setup>
 import { ref } from 'vue'
+import { catagolo, paquetes } from '../../data/servicios'
 
 const open = ref(false)
 const selected = ref(null)
 
-const paquetes = {
-  landing: {
-    title: 'Página básica',
-    price: 'Desde $2,500',
-    features: [
-      'Página informativa',
-      'Diseño profesional',
-      'Adaptada a celular',
-      'Botón de WhatsApp'
-    ]
-  },
-  negocio: {
-    title: 'Página para negocio',
-    price: 'Desde $4,500',
-    features: [
-      'Todo lo del plan básico',
-      'Varias secciones',
-      'Optimizada para Google',
-      'Estructura para clientes'
-    ]
-  },
-  tienda: {
-    title: 'Tienda en línea',
-    price: 'Desde $8,000',
-    features: [
-      'Venta de productos',
-      'Carrito de compra',
-      'Pagos integrados',
-      'Configuración inicial'
-    ]
-  }
-}
-
 const openModal = (type) => {
+  if (!paquetes[type]) return
   selected.value = paquetes[type]
   open.value = true
 }
@@ -88,78 +51,21 @@ const closeModal = () => {
 
       <div class="border-t border-black/10">
         
-        <div class="group flex flex-col justify-between border-b border-black/10 py-10 transition-all hover:bg-emerald-50/50 md:flex-row md:items-center md:px-6" data-aos="flip-left">
+        <div v-for="(lista, key) in catagolo" :key="key" class="group flex flex-col justify-between border-b border-black/10 py-10 transition-all hover:bg-emerald-50/50 md:flex-row md:items-center md:px-6" data-aos="flip-left">
           <div class="flex-1">
-            <h3 class="font-serif text-3xl transition-all group-hover:translate-x-2 md:text-4xl">Landing Pages</h3>
+            <h3 class="font-serif text-3xl transition-all group-hover:translate-x-2 md:text-4xl">{{ lista.title }}</h3>
             <p class="mt-2 max-w-md text-sm text-gray-500 uppercase tracking-widest font-bold">
-              Para empezar a vender rápido
+              {{ lista.subtitle }}
             </p>
           </div>
           <div class="mt-6 flex-1 md:mt-0">
             <p class="max-w-sm text-lg leading-relaxed text-gray-600">
-              Una página simple y clara para mostrar tu servicio y conseguir clientes sin complicaciones.
+              {{ lista.texto }}
             </p>
           </div>
           <div class="mt-6 flex justify-end md:mt-0">
-            <button @click="openModal('landing')" class="inline-block rounded-full border border-black/20 px-6 py-2 text-xs font-bold uppercase tracking-widest transition-colors group-hover:bg-black group-hover:text-white">
-              Quiero esta página
-            </button>
-          </div>
-        </div>
-
-        <div class="group flex flex-col justify-between border-b border-black/10 py-10 transition-all hover:bg-emerald-50/50 md:flex-row md:items-center md:px-6" data-aos="flip-left">
-          <div class="flex-1">
-            <h3 class="font-serif text-3xl transition-all group-hover:translate-x-2 md:text-4xl">Página para tu negocio</h3>
-            <p class="mt-2 max-w-md text-sm text-gray-500 uppercase tracking-widest font-bold">
-              Presencia profesional en internet
-            </p>
-          </div>
-          <div class="mt-6 flex-1 md:mt-0">
-            <p class="max-w-sm text-lg leading-relaxed text-gray-600">
-              Ideal si quieres mostrar tus servicios, generar confianza y que tus clientes te encuentren fácilmente.
-            </p>
-          </div>
-          <div class="mt-6 flex justify-end md:mt-0">
-            <button @click="openModal('negocio')" class="inline-block rounded-full border border-black/20 px-6 py-2 text-xs font-bold uppercase tracking-widest transition-colors group-hover:bg-black group-hover:text-white">
-              Quiero esta página
-            </button>
-          </div>
-        </div>
-
-        <div class="group flex flex-col justify-between border-b border-black/10 py-10 transition-all hover:bg-emerald-50/50 md:flex-row md:items-center md:px-6" data-aos="flip-left">
-          <div class="flex-1">
-            <h3 class="font-serif text-3xl transition-all group-hover:translate-x-2 md:text-4xl">E-commerce</h3>
-            <p class="mt-2 max-w-md text-sm text-gray-500 uppercase tracking-widest font-bold">
-              Vende tus productos en línea
-            </p>
-          </div>
-          <div class="mt-6 flex-1 md:mt-0">
-            <p class="max-w-sm text-lg leading-relaxed text-gray-600">
-              Tu propia tienda online para vender sin depender de redes sociales ni intermediarios.
-            </p>
-          </div>
-          <div class="mt-6 flex justify-end md:mt-0">
-            <button @click="openModal('tienda')" class="inline-block rounded-full border border-black/20 px-6 py-2 text-xs font-bold uppercase tracking-widest transition-colors group-hover:bg-black group-hover:text-white">
-              Quiero esta página
-            </button>
-          </div>
-        </div>
-
-        <div class="group flex flex-col justify-between border-b border-black/10 py-10 transition-all hover:bg-emerald-50/50 md:flex-row md:items-center md:px-6" data-aos="flip-left">
-          <div class="flex-1">
-            <h3 class="font-serif text-3xl transition-all group-hover:translate-x-2 md:text-4xl">Mantenimiento web</h3>
-            <p class="mt-2 max-w-md text-sm text-gray-500 uppercase tracking-widest font-bold">
-              Nos encargamos por ti
-            </p>
-          </div>
-          <div class="mt-6 flex-1 md:mt-0">
-            <p class="max-w-sm text-lg leading-relaxed text-gray-600">
-              Actualizamos, cuidamos y mantenemos tu página funcionando para que tú no tengas que preocuparte por nada.
-            </p>
-          </div>
-          <div class="mt-6 flex justify-end md:mt-0">
-            <button class="inline-block rounded-full border border-black/20 px-6 py-2 text-xs font-bold uppercase tracking-widest transition-colors group-hover:bg-black group-hover:text-white">
-              Ver detalles
+            <button @click="openModal(key)" class="inline-block rounded-full border border-black/20 px-6 py-2 text-xs font-bold uppercase tracking-widest transition-colors group-hover:bg-black group-hover:text-white">
+              {{ lista.btn }}
             </button>
           </div>
         </div>
@@ -169,7 +75,7 @@ const closeModal = () => {
   </section>
 </template>
 
-<style scoped>
+<style>
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,900;1,400&display=swap');
 
 .font-serif {

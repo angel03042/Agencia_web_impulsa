@@ -1,8 +1,5 @@
-<!--FAQ (Preguntas frecuentes)
-
-Reduce dudas del cliente
-Aumenta conversiones-->
 <script setup>
+import { preguntas } from '../../data/faq'
 </script>
 
 <template>
@@ -18,68 +15,13 @@ Aumenta conversiones-->
 
       <div class="space-y-2 border-t border-black/10">
         
-        <details class="group border-b border-black/10 py-6">
+        <details v-for="(pregunta, i) in preguntas" :key="i" class="group border-b border-black/10 py-6">
           <summary class="flex cursor-pointer items-center justify-between list-none">
-            <h3 class="text-xl font-bold tracking-tight md:text-2xl">¿Cuánto tiempo tarda en estar lista mi web?</h3>
+            <h3 class="text-xl font-bold tracking-tight md:text-2xl">{{ pregunta.name }}</h3>
             <span class="text-2xl transition-transform group-open:rotate-45">+</span>
           </summary>
           <div class="mt-6 max-w-2xl text-lg leading-relaxed text-gray-600">
-            Una landing page suele estar lista en 2 a 5 días. Si es una página más completa, puede tomar de 1 a 2 semanas.
-          </div>
-        </details>
-
-        <details class="group border-b border-black/10 py-6">
-          <summary class="flex cursor-pointer items-center justify-between list-none">
-            <h3 class="text-xl font-bold tracking-tight md:text-2xl">¿La página será de mi propiedad?</h3>
-            <span class="text-2xl transition-transform group-open:rotate-45">+</span>
-          </summary>
-          <div class="mt-6 max-w-2xl text-lg leading-relaxed text-gray-600">
-            Sí, la página es completamente tuya. Una vez terminada, tendrás acceso total y podrás usarla como quieras.
-          </div>
-        </details>
-
-        <details class="group border-b border-black/10 py-6">
-          <summary class="flex cursor-pointer items-center justify-between list-none">
-            <h3 class="text-xl font-bold tracking-tight md:text-2xl">¿Necesito proporcionar los textos e imágenes?</h3>
-            <span class="text-2xl transition-transform group-open:rotate-45">+</span>
-          </summary>
-          <div class="mt-6 max-w-2xl text-lg leading-relaxed text-gray-600">
-            Si ya tienes textos e imágenes, perfecto. Si no, te ayudamos a crearlos para que no tengas que preocuparte por eso.
-          </div>
-        </details>
-
-        <details class="group border-b border-black/10 py-6">
-          <summary class="flex cursor-pointer items-center justify-between list-none">
-            <h3 class="text-xl font-bold tracking-tight md:text-2xl">¿Cómo garantizáis que la web genere ventas?</h3>
-            <span class="text-2xl transition-transform group-open:rotate-45">+</span>
-          </summary>
-          <div class="mt-6 max-w-2xl text-lg leading-relaxed text-gray-600">
-            Diseñamos la página para que sea clara, rápida y fácil de usar, guiando al visitante a contactarte o comprar.
-          </div>
-        </details>
-
-        <details class="group border-b border-black/10 py-6">
-          <summary class="flex cursor-pointer items-center justify-between list-none">
-            <h3 class="text-xl font-bold tracking-tight md:text-2xl">
-            ¿Cómo es el pago?
-            </h3>
-            <span class="text-2xl transition-transform group-open:rotate-45">+</span>
-          </summary>
-          <div class="mt-6 max-w-2xl text-lg leading-relaxed text-gray-600">
-            Se trabaja con un anticipo para iniciar y el resto al finalizar el proyecto. 
-            También podemos adaptarnos según el tipo de página.
-          </div>
-        </details>
-
-        <details class="group border-b border-black/10 py-6">
-          <summary class="flex cursor-pointer items-center justify-between list-none">
-            <h3 class="text-xl font-bold tracking-tight md:text-2xl">
-            ¿Puedo pedir cambios?
-            </h3>
-            <span class="text-2xl transition-transform group-open:rotate-45">+</span>
-          </summary>
-          <div class="mt-6 max-w-2xl text-lg leading-relaxed text-gray-600">
-            Sí, durante el proceso puedes pedir ajustes para asegurarnos de que la página quede como la necesitas.
+            {{ pregunta.respuesta }}
           </div>
         </details>
 
@@ -94,7 +36,7 @@ Aumenta conversiones-->
   </section>
 </template>
 
-<style scoped>
+<style>
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,900;1,400&display=swap');
 
 .font-serif {

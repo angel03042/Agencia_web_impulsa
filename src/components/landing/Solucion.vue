@@ -1,14 +1,5 @@
-<!--Aquí explicas qué haces:
-
-Diseño web moderno
-Tiendas en línea
-Optimización SEO básica
-Páginas rápidas
-
-Importante: habla en beneficios, no en tecnología
-
-“Tu web será rápida, atractiva y lista para vender”-->
 <script setup>
+import { soluciones } from "../../data/solucion"
 </script>
 
 <template>
@@ -30,55 +21,16 @@ Importante: habla en beneficios, no en tecnología
 
       <div class="mt-20 grid grid-cols-1 gap-px bg-black/10 lg:grid-cols-2">
         
-        <div class="group bg-[#FDFCF8] p-12 transition-colors hover:bg-emerald-900 hover:text-white" data-aos="flip-up">
+        <div v-for="solucion in soluciones" :key="solucion.id" class="group bg-[#FDFCF8] p-12 transition-colors hover:bg-emerald-900 hover:text-white" data-aos="flip-up">
           <div class="mb-8 flex justify-between">
-            <span class="font-serif text-4xl italic opacity-20 group-hover:opacity-100">01</span>
+            <span class="font-serif text-4xl italic opacity-20 group-hover:opacity-100">{{ solucion.id }}</span>
             <svg class="h-8 w-8 -rotate-45 transition-transform group-hover:rotate-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
             </svg>
           </div>
-          <h3 class="text-3xl font-bold tracking-tight">Te ves profesional desde el inicio</h3>
+          <h3 class="text-3xl font-bold tracking-tight">{{ solucion.name }}</h3>
           <p class="mt-4 text-lg leading-relaxed opacity-70">
-            Diseñamos tu página para que transmita confianza y seriedad, aunque estés empezando. Tus clientes sabrán que pueden confiar en ti desde el primer vistazo.
-          </p>
-        </div>
-
-        <div class="group bg-[#FDFCF8] p-12 transition-colors hover:bg-emerald-900 hover:text-white" data-aos="flip-up">
-          <div class="mb-8 flex justify-between">
-            <span class="font-serif text-4xl italic opacity-20 group-hover:opacity-100">02</span>
-            <svg class="h-8 w-8 -rotate-45 transition-transform group-hover:rotate-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-            </svg>
-          </div>
-          <h3 class="text-3xl font-bold tracking-tight">Tus clientes pueden encontrarte</h3>
-          <p class="mt-4 text-lg leading-relaxed opacity-70">
-            Creamos tu web para que aparezcas cuando alguien busque lo que ofreces. Dejas de depender solo de recomendaciones y empiezas a recibir nuevos contactos.
-          </p>
-        </div>
-
-        <div class="group bg-[#FDFCF8] p-12 transition-colors hover:bg-emerald-900 hover:text-white" data-aos="flip-down">
-          <div class="mb-8 flex justify-between">
-            <span class="font-serif text-4xl italic opacity-20 group-hover:opacity-100">03</span>
-            <svg class="h-8 w-8 -rotate-45 transition-transform group-hover:rotate-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-            </svg>
-          </div>
-          <h3 class="text-3xl font-bold tracking-tight">Disponible 24/7 para tu negocio</h3>
-          <p class="mt-4 text-lg leading-relaxed opacity-70">
-            Tu página trabaja por ti todo el tiempo. Muestra tus servicios, responde dudas y permite que te contacten incluso cuando tú no estás disponible.
-          </p>
-        </div>
-
-        <div class="group bg-[#FDFCF8] p-12 transition-colors hover:bg-emerald-900 hover:text-white" data-aos="flip-down">
-          <div class="mb-8 flex justify-between">
-            <span class="font-serif text-4xl italic opacity-20 group-hover:opacity-100">04</span>
-            <svg class="h-8 w-8 -rotate-45 transition-transform group-hover:rotate-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-            </svg>
-          </div>
-          <h3 class="text-3xl font-bold tracking-tight">Nos encargamos de todo</h3>
-          <p class="mt-4 text-lg leading-relaxed opacity-70">
-            No necesitas saber de diseño ni tecnología. Nosotros creamos tu página completa para que tú solo te enfoques en tu negocio.
+            {{ solucion.description }}
           </p>
         </div>
 
@@ -87,7 +39,7 @@ Importante: habla en beneficios, no en tecnología
   </section>
 </template>
 
-<style scoped>
+<style>
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,900;1,400&display=swap');
 
 .font-serif {

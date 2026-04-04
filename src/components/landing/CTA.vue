@@ -1,7 +1,3 @@
-<!--Repite el llamado a la acción:
-
-“Solicita tu página web hoy”
-Botón: WhatsApp / formulario-->
 <script setup>
 </script>
 
@@ -57,7 +53,7 @@ Botón: WhatsApp / formulario-->
   </section>
 </template>
 
-<style scoped>
+<style>
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,900;1,400&display=swap');
 
 .font-serif {

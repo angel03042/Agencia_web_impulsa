@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+import video from '@/assets/video.mp4'
+</script>
 
 <template>
   <header id="inicio" class="relative min-h-screen bg-[#FDFCF8] px-6 mt-24 text-[#1A1A1A] md:mt-52  md:px-12 lg:px-24 lg:mt-0">
@@ -28,11 +30,7 @@
 
         <div class="relative lg:col-span-5">
           <div class="aspect-[7/8] overflow-hidden rounded-t-full border border-black/10 shadow-2xl" data-aos="flip-up">
-            <img 
-              src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=600&auto=format&fit=crop" 
-              alt="Workplace" 
-              class="h-full w-full object-cover xl:grayscale hover:grayscale-0 transition-all duration-700"
-            />
+            <video class="h-full w-full object-cover xl:grayscale hover:grayscale-0 transition-all duration-700" :src="video" autoplay="" loop muted="" playsinline=""></video>
           </div>
 
           <div class="animation absolute -bottom-6 -left-12 hidden md:block bg-emerald-900 p-8 text-white shadow-2xl rotate-[-3deg]">

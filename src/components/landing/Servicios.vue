@@ -19,7 +19,7 @@ const closeModal = () => {
 <template>
   <section>
     <!-- Modal -->
-    <div v-if="open" class="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
+    <div v-if="open" class="fixed inset-0 bg-black/50 flex items-center justify-center z-50 px-10 md:px-0">
       <div class="bg-white p-8 max-w-md w-full rounded-xl shadow-xl relative">
         <button @click="closeModal" class="absolute top-4 right-4">✕</button>
 

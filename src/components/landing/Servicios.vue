@@ -24,6 +24,7 @@ const closeModal = () => {
         <button @click="closeModal" class="absolute top-4 right-4">✕</button>
 
         <h3 class="text-2xl font-bold">{{ selected.title }}</h3>
+        <p class="text-sm text-neutral-500">{{ selected.subtitle }}</p>
         <p class="text-3xl font-serif mt-2">{{ selected.price }}</p>
 
         <ul class="mt-6 space-y-3 text-gray-600">

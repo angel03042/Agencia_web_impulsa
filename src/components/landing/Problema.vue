@@ -3,7 +3,7 @@ import { problemas } from '../../data/problema'
 </script>
 
 <template>
-  <section id="problema" class="bg-[#FDFCF8] px-6 py-24 md:px-12 lg:px-24 border-t border-black/5">
+  <section id="diagnostico" class="bg-[#FDFCF8] px-6 py-24 md:px-12 lg:px-24 border-t border-black/5">
     <div class="mx-auto max-w-7xl">
       
       <div class="mb-12 max-w-3xl">

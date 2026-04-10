@@ -1,8 +1,60 @@
 <script setup>
 import { WHATSAPP_LINK } from '../../config/contact'
+import { ref } from 'vue'
+
+const abrirModal = ref(false)
+
 </script>
 
 <template>
+  <transition enter-active-class="transition duration-300 ease-out" enter-from-class="opacity-0" enter-to-class="opacity-100" leave-active-class="transition duration-200 ease-in" leave-from-class="opacity-100" leave-to-class="opacity-0">
+    <div v-if="abrirModal" class="fixed inset-0 z-[100] flex items-center justify-center bg-[#1A1A1A]/80 backdrop-blur-sm px-6">
+      
+      <div class="relative w-ull max-w-2xl max-h-[90vh] bg-[#FDFCF8] p-8 shadow-2xl md:p-16 border border-black/5">
+        
+        <button @click="abrirModal = false" class="absolute right-8 top-8 text-[10px] font-bold uppercase tracking-[0.2em] text-gray-400 hover:text-black transition-colors">
+          Cerrar [×]
+        </button>
+
+        <div class="mb-8">
+          <span class="text-[10px] font-bold uppercase tracking-[0.3em] text-emerald-900/60">Contacto directo</span>
+          <h2 class="mt-2 font-serif text-2xl leading-tight tracking-tighter md:text-4xl">
+            Cuéntanos sobre tu <span class="italic text-emerald-900">visión</span>.
+          </h2>
+        </div>
+
+        <form action="https://formspree.io/f/mwvwdyal" method="POST" class="space-y-10">
+          
+          <div class="grid grid-cols-1 gap-10 md:grid-cols-2">
+            <div class="group relative">
+              <label class="text-[10px] font-bold uppercase tracking-widest text-gray-400 group-focus-within:text-emerald-900">Tu nombre</label>
+              <input type="text" name="name" placeholder="Ej. Julian Casablancas" class="w-full border-b border-black/10 bg-transparent py-3 text-lg outline-none transition-colors focus:border-emerald-900 placeholder:text-gray-200"/>
+            </div>
+            
+            <div class="group relative">
+              <label class="text-[10px] font-bold uppercase tracking-widest text-gray-400 group-focus-within:text-emerald-900">Email</label>
+              <input type="email" name="email" placeholder="hola@empresa.com" class="w-full border-b border-black/10 bg-transparent py-3 text-lg outline-none transition-colors focus:border-emerald-900 placeholder:text-gray-200"/>
+            </div>
+          </div>
+
+          <div class="group relative">
+            <label class="text-[10px] font-bold uppercase tracking-widest text-gray-400 group-focus-within:text-emerald-900">Mensaje o detalles del proyecto</label>
+            <textarea name="message" rows="3" placeholder="¿Qué tienes en mente?" class="w-full border-b border-black/10 bg-transparent py-3 text-lg outline-none transition-colors focus:border-emerald-900 resize-none placeholder:text-gray-200"></textarea>
+          </div>
+
+          <div class="flex flex-col items-center justify-between gap-6 md:flex-row">
+            <p class="text-[10px] leading-relaxed text-gray-400 max-w-[200px]">
+              Al enviar, aceptas que procesemos tus datos para contactarte.
+            </p>
+            <button type="submit" class="group relative overflow-hidden bg-black px-12 py-4 text-[#FDFCF8] transition-all hover:bg-emerald-900">
+              <span class="relative z-10 text-xs font-bold uppercase tracking-[0.2em]">Enviar consulta —</span>
+            </button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </transition>
   <section id="contacto" class="bg-[#1A1A1A] px-6 py-24 text-[#FDFCF8] md:px-12 lg:px-24">
     <div class="mx-auto max-w-7xl">
       
@@ -33,11 +85,11 @@ import { WHATSAPP_LINK } from '../../config/contact'
             </div>
           </a>
 
-          <a href="#formulario" 
+          <a @click="abrirModal = true"
              class="group flex items-center justify-between border border-[#FDFCF8]/20 bg-transparent p-8 transition-all hover:bg-[#FDFCF8] hover:text-[#1A1A1A]">
             <div>
               <p class="text-[10px] font-bold uppercase tracking-widest opacity-60">Planificación a medida</p>
-              <h3 class="mt-1 text-3xl font-bold tracking-tight">Enviar Formulario</h3>
+              <h3 class="mt-1 text-3xl font-bold tracking-tight">Solicitar propuesta</h3>
             </div>
             <div class="flex h-12 w-12 items-center justify-center rounded-full border border-current transition-transform group-hover:rotate-45">
               <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -36,10 +36,10 @@ onUnmounted(() => {
 
       <div class="hidden space-x-10 lg:flex">
         <a href="#inicio" class="nav-link">Inicio</a>
-        <a href="#problema" class="nav-link">Problema</a>
+        <a href="#diagnostico" class="nav-link">Diagnostico</a>
         <a href="#solucion" class="nav-link">Solución</a>
         <a href="#servicios" class="nav-link">Servicios</a>
-        <a href="#testimonios" class="nav-link">Proyectos</a>
+        <a href="#proyectos" class="nav-link">Proyectos</a>
       </div>
 
       <div class="flex items-center gap-6">

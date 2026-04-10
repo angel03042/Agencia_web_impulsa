@@ -3,7 +3,7 @@ import { proyectos, comentarios } from '../../data/proyectos'
 </script>
 
 <template>
-  <section id="testimonios" class="bg-[#FDFCF8] px-6 py-18 md:px-12 lg:px-24 border-t border-black/5">
+  <section id="proyectos" class="bg-[#FDFCF8] px-6 py-18 md:px-12 lg:px-24 border-t border-black/5">
     <div class="mx-auto max-w-7xl">
       
       <div class="mb-20">

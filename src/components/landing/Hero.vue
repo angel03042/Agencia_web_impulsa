@@ -1,18 +1,35 @@
 <script setup>
 import video from '@/assets/video.mp4'
+import { ref, onMounted } from 'vue'
+
+const palabras = ['venden', 'conectan', 'convencen', 'impactan']
+const palabraActual = ref(palabras[0])
+let index = 0
+
+onMounted(() => {
+  setInterval(() => {
+    index = (index + 1) % palabras.length
+    palabraActual.value = palabras[index]
+  }, 2500) // cada 2.5s
+})
 </script>
 
 <template>
-  <header id="inicio" class="relative min-h-screen bg-[#FDFCF8] px-6 mt-24 text-[#1A1A1A] md:mt-52  md:px-12 lg:px-24 lg:mt-0">
+  <header id="inicio" class="relative min-h-screen bg-[#F8F5EF] px-6 py-24 text-[#1A1A1A] md:py-52  md:px-12 lg:px-24 lg:py-0">
 
     <div class="mx-auto max-w-7xl flex justify-center items-center h-screen">
       <div class="grid grid-cols-1 items-end gap-16 lg:grid-cols-12">
         
         <div class="lg:col-span-7">
-          <h1 class="font-serif text-6xl leading-[0.9] tracking-tighter sm:text-7xl xl:text-8xl" data-aos="zoom-in-right">
-            Creamos <br />
-            <span class="italic text-emerald-900">páginas</span> <br />
-            que venden.
+          <h1 class="font-serif text-5xl leading-[0.9] tracking-tighter sm:text-7xl xl:text-8xl">
+            Creamos <br /><span class="italic text-emerald-900">páginas</span> <br />que
+            <span class="relative inline-block ml-2 overflow-hidden align-bottom">
+              <transition name="fade" mode="out-in">
+                <span :key="palabraActual" class="inline-block">
+                {{ palabraActual }}.
+                </span>
+              </transition>
+            </span>
           </h1>
           
           <div class="mt-12 max-w-md space-y-6" data-aos="fade-up" data-aos-duration="2000">
@@ -21,7 +38,7 @@ import video from '@/assets/video.mp4'
             </p>
             
             <div class="flex flex-wrap gap-4">
-              <a href="#servicios" class="group relative overflow-hidden border border-black bg-black px-8 py-4 text-white transition-all hover:bg-transparent hover:text-black">
+              <a href="#diagnostico" class="group relative overflow-hidden border border-black bg-black px-8 py-4 text-white transition-all hover:bg-transparent hover:text-black">
                 <span class="relative z-10 font-bold uppercase tracking-widest text-sm">Empezar ahora —</span>
               </a>
             </div>
@@ -55,6 +72,21 @@ import video from '@/assets/video.mp4'
 
 .animation {
   animation: cartel 2s ease-in-out;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.5s ease;
+}
+
+.fade-enter-from {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.fade-leave-to {
+  opacity: 0;
+  transform: translateY(-10px);
 }
 
 @keyframes cartel {

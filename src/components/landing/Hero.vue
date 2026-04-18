@@ -21,7 +21,7 @@ onMounted(() => {
       <div class="grid grid-cols-1 items-end gap-16 lg:grid-cols-12">
         
         <div class="lg:col-span-7">
-          <h1 class="font-serif text-5xl leading-[0.9] tracking-tighter sm:text-7xl xl:text-8xl">
+          <h1 class="font-serif text-5xl leading-[0.9] tracking-tighter sm:text-7xl xl:text-8xl" data-aos="fade-up">
             Creamos <br /><span class="italic text-emerald-900">páginas</span> <br />que
             <span class="relative inline-block ml-2 overflow-hidden align-bottom">
               <transition name="fade" mode="out-in">

@@ -17,7 +17,7 @@ export const paquetes = {
   },
   negocio: {
     title: "Página para negocio",
-    price: "Desde $4,500",
+    price: "Desde $6,000",
     features: [
       "Todo lo incluido en la landing page",
       "Sitio con múltiples secciones (inicio, servicios, contacto, etc.)",
@@ -33,7 +33,7 @@ export const paquetes = {
   },
   tienda: {
     title: "Página avanzada",
-    price: "Desde $8,000",
+    price: "Desde $12,000",
     features: [
       "Todo lo del plan negocio",
       "Sistema de gestión (contenido o productos)",
@@ -52,12 +52,12 @@ export const paquetes = {
     subtitle: "Solo aplica para nuestros clientes",
     price: "Desde $200",
     features: [
-      "Cambios de contenido cuando lo necesites",
+      "Hasta 5 cambios al mes",
       "Corrección rápida de errores",
       "Mejora continua del rendimiento",
       "Respaldos de seguridad",
-      "Soporte prioritario",
-      "Ajustes de diseño sin costo extra",
+      "Soporte en horario laboral",
+      "Cambios adicionales se cotizan aparte",
     ],
   },
 };
